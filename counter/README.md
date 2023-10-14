@@ -88,7 +88,7 @@ methods:
 
 ```
 
-# after this run this command to build program
+# After this build program using command
 
 ```javascript
 
@@ -103,7 +103,7 @@ solana config set --url devnet
 ```
 
 # Then deploy the program 
-**go to progrm directory**
+**go to program directory**
 ```javascript
 solana program deploy target/deploy/counter.so 
 
@@ -173,100 +173,10 @@ fs.readFile(path.join(os.homedir(), ".config/solana/id.json")).then((file) =>
 
 
 ```
-# then run the app.ts file
+# Then run the app.ts file
 
 ```javascript
- npx ts-node app.ts program Id
-
-+==== Mint Address  ====+
-8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA
-+==== John Doe Wallet ====+
-5Yr4Zqtx54xPfwcG9HQo1cbc69dsMtUuG5XpByhj7HnB
-+==== Jane Doe Wallet ====+
-7LZgn4hTZEPoMWFMjSWfWH1Tou1qBRnT6CTHHBkPw8qg
-+==== Gem Metadata Address ====+
-JCvVLFrsxsh2QwGG6PxPfUsyubtLupdxhz7Wj2x52SRB
-+==== John Doe ATA ====+
-FCVSdBQiEwfC52JUPEMBEFk9bTgdqPtoZHVMj71tazBm
-+==== Jane Doe ATA ====+
-EESV5ocjUtboyDNE8JwasXFXeZbN1Kp2nAcP6v3Zf8o1
-+==== Minting... ====+
-+==== Minted ====+
-+==== Mint ====+
-{
-  address: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  mintAuthority: null,
-  supply: 1n,
-  decimals: 0,
-  isInitialized: true,
-  freezeAuthority: null,
-  tlvData: <Buffer >
-}
-+==== Gem Metadata ====+
-{
-  color: 'Purple',
-  rarity: 'Rare',
-  shortDescription: 'Only possible to collect from the lost temple event',
-  mint: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  assocAccount: PublicKey [PublicKey(FCVSdBQiEwfC52JUPEMBEFk9bTgdqPtoZHVMj71tazBm)] {
-    _bn: <BN: d2f52a4428d72c8b4663363c9b2e0ddace49d893575ae9988c6f46d36760f34c>
-  }
-}
-+==== Transferring... ====+
-+==== Transferred ====+
-+==== Mint ====+
-{
-  address: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  mintAuthority: null,
-  supply: 1n,
-  decimals: 0,
-  isInitialized: true,
-  freezeAuthority: null,
-  tlvData: <Buffer >
-}
-+==== Gem Metadata ====+
-{
-  color: 'Purple',
-  rarity: 'Rare',
-  shortDescription: 'Only possible to collect from the lost temple event',
-  mint: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  assocAccount: PublicKey [PublicKey(EESV5ocjUtboyDNE8JwasXFXeZbN1Kp2nAcP6v3Zf8o1)] {
-    _bn: <BN: c4994bade5abdcc6819f156c9a225a5d48c0a0ee8caf7a580df473d6d77d1558>
-  }
-}
-+==== Burning... ====+
-+==== Burned ====+
-+==== Mint ====+
-{
-  address: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  mintAuthority: null,
-  supply: 0n,
-  decimals: 0,
-  isInitialized: true,
-  freezeAuthority: null,
-  tlvData: <Buffer >
-}
-+==== Gem Metadata ====+
-{
-  color: 'Purple',
-  rarity: 'Rare',
-  shortDescription: 'Only possible to collect from the lost temple event',
-  mint: PublicKey [PublicKey(8fdPhYDSaRbqMZi3HSomSEhfVhscmj1xnJdW4ELV7JLA)] {
-    _bn: <BN: 71e706ee35f2f731ac3c47509a9d894c8e16451ecafe62f866c68b00e705db0b>
-  },
-  assocAccount: undefined
-}
-
+ npx ts-node app.ts program Id  
 ```
 
 
