@@ -46,22 +46,22 @@ methods:
     codigo solana generate counter.yaml
 ```
 
-# Task 2: Add the increment and decrement codes
+# Task 2: Add the increment codes  
 
-```rust
-    Increament
-
+```rust 
         pub fn increment(
             program_id: &Pubkey,
             greeting_account: &mut Account<GreetingAccount>,
         ) -> ProgramResult {
             greeting_account.data.counter += 1;
             Ok(())
-        } 
+        }   
+```
 
-    Decrement
+# Task 3: Add the Decrement codes  
 
-        pub fn decrement(
+```rust
+ pub fn decrement(
             program_id: &Pubkey,
             greeting_account: &mut Account<GreetingAccount>,
         ) -> ProgramResult {
@@ -70,13 +70,18 @@ methods:
             Ok(())
         }
 
-    Reset
+```
 
-        pub fn reset(
+# Task 4: Add the Reset codes  
+
+```rust
+  pub fn reset(
             program_id: &Pubkey,
             greeting_account: &mut Account<GreetingAccount>,
         ) -> ProgramResult {
             greeting_account.data.counter = 0;
             Ok(())
         }
+
 ```
+
